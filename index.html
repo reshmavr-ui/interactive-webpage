@@ -1,45 +1,59 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reshma’s Interactive Page</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <meta charset="UTF-8" />
+    <title>Reshma Web App</title>
+    <link rel="stylesheet" href="C:\Users\Dell\source\repos\my-first-webpage\interactive-webpage\styles.css">
 
-<body>
-    <header>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="Logo" class="logo">
-        <h1>Welcome to Reshma’s Interactive Page 🌸</h1>
+    <script>
+        console.log("INLINE SCRIPT WORKS");
+    </script>
+   
+
+</head>
+<body class="dark">
+
+
+
+    <!-- HEADER -->
+    <header class="header">
+        <h2>Reshma’s Web World</h2>
+        <div>
+            <button id="homeBtn">Home</button>
+            <button onclick="window.location.href='about.html'">
+                About Me
+            </button>
+            <button id="darkToggle">☀️</button>
+
+        </div>
     </header>
 
-    <main>
-        <section class="intro">
-            <p>This page shows how HTML, CSS, and JavaScript work together — with styling, interactivity, and animation.</p>
-        </section>
+    <!-- HOME -->
+    <section id="home">
+        <h1>Welcome 👋</h1>
+        <p>Interactive Web App Demo</p>
 
-        <section class="color-section">
-            <h2>🎨 Change Background Color</h2>
-            <button id="colorBtn">Change Color</button>
-        </section>
+        <input id="nameInput" placeholder="Enter your name">
 
-        <section class="form-section">
-            <h2>📋 Enter Your Name</h2>
-            <input type="text" id="nameInput" placeholder="Type your name here">
-            <button id="greetBtn">Say Hello</button>
-            <p id="greetingText"></p>
-        </section>
+        <br><br>
 
-        <section class="animation-section">
-            <h2>🌈 Animation Demo</h2>
-            <div class="ball"></div>
-        </section>
-    </main>
+        <button id="fetchBtn">Send Request</button>
+        <button id="colorBtn">Change Background</button>
 
-    <footer>
-        <p>Made with 💙 by Reshma</p>
-    </footer>
+        <p id="dataText"></p>
+    </section>
 
-    <script src="script.js"></script>
+    <!-- ABOUT -->
+    <section id="about" style="display:none;">
+        <h1>About Me</h1>
+        <p>
+            Microsoft Dynamics 365 & Power Platform
+    </section>
+    <script src="app.js"></script>
+
+
+
+
+
 </body>
 </html>

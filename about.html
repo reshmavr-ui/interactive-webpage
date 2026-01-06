@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Reshma</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="dark">
+    <!--class="bg-blue-50 font-sans text-gray-800"> -->
+    <!-- Navbar -->
+    <!--<nav class="bg-blue-700 text-white p-4 flex justify-between items-center shadow-md">
+        <h1 class="text-xl font-semibold">Reshma’s Web World 🌸</h1>
+        <div class="space-x-4">
+            <a href="index.html" class="hover:underline">Home</a>
+            <a href="about.html" class="hover:underline font-bold">About Me</a>
+        </div>
+    </nav>-->
+    <!-- HEADER -->
+    <header class="header">
+        <h2>Reshma’s Web World</h2>
+        <div>
+            <button onclick="window.location.href='index.html'">
+                Home
+            </button>
+            <button onclick="window.location.href='about.html'">
+                About Me
+            </button>
+            
+ 
+        </div>
+
+    </header>
+
+    <!-- About Content -->
+    <section class="card">
+        <h2 class="text-3xl font-bold mb-6 text-blue-700">About Me</h2>
+        <p class="text-lg leading-relaxed">
+            Hi 👋 I’m <strong>Reshma</strong> — a curious learner exploring how websites and automations work.
+            I love blending creativity with logic — whether it's building Power Automate flows, creating event
+            pages, or designing beautiful interfaces.
+        </p>
+
+        <p class="mt-4 text-lg">
+            This site is my practice playground 🌱 — where I experiment with <em>HTML, CSS, JavaScript, and data connections</em>.
+        </p>
+
+        <section class="card">
+            <h2>📄 Resume</h2>
+            <p>Download my resume to learn more about my experience.</p>
+
+            <a href="resume.pdf" download class="btn">
+                ⬇ Download Resume
+            </a>
+        </section>
+        <section class="card">
+            <h2>🔗 Connect With Me</h2>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/reshmavreddy/" target="_blank">
+                    LinkedIn
+                </a>
+
+            </div>
+        </section>
+        <section class="card">
+            <h2>📬 Contact Me</h2>
+
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="4"></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        <section>
+            <div class="projects">
+                <div class="project-card" onclick="openModal('Power Apps CRM')">
+                    <h3>Power Apps CRM</h3>
+                    <p>Custom CRM built using Power Apps.</p>
+                </div>
+
+                <div class="project-card" onclick="openModal('Automation Flows')">
+                    <h3>Automation Flows</h3>
+                    <p>Power Automate approval workflows.</p>
+                </div>
+
+                <div class="project-card" onclick="openModal('Web App')">
+                    <h3>Interactive Web App</h3>
+                    <p>HTML, CSS, JavaScript app.</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <a href="index.html" class="mt-8 inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-800">
+            ⬅ Back to Home
+        </a>
+    </section>
+
+
+    <footer class="mt-16 p-4 bg-gray-100 text-sm text-center text-gray-600">
+        © 2025 Reshma’s Web World | All Rights Reserved
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">×</span>
+            <h2 id="modalTitle"></h2>
+            <p>This project demonstrates real-world implementation and best practices.</p>
+        </div>
+    </div>
+
+    
+</body>
+</html>

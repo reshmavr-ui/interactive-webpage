@@ -17,10 +17,7 @@ homeBtn.onclick = () => {
     about.style.display = "none";
 };
 
-aboutBtn.onclick = () => {
-    about.style.display = "block";
-    home.style.display = "none";
-};
+
 
 /* BACKGROUND */
 colorBtn.onclick = () => {
@@ -28,6 +25,13 @@ colorBtn.onclick = () => {
     document.body.style.background =
         colors[Math.floor(Math.random() * colors.length)];
 };
+
+const darkToggle = document.getElementById("darkToggle");
+
+darkToggle.onclick = () => {
+    document.body.classList.toggle("dark");
+};
+
 
 /* FETCH */
 fetchBtn.onclick = async () => {
@@ -45,5 +49,15 @@ fetchBtn.onclick = async () => {
     });
 
     const data = await res.json();
-    dataText.textContent = `✅ Hello ${nameInput.value}, ID: ${data.id}`;
+    dataText.textContent = `✅ Hello ${nameInput.value}, pleased to have you here, wanna know more, click on 'About Me'`;
 };
+function openModal(title) {
+    document.getElementById("modalTitle").textContent = title;
+    document.getElementById("modal").style.display = "flex";
+}
+
+function closeModal() {
+    document.getElementById("modal").style.display = "none";
+}
+
+
